@@ -53,6 +53,11 @@ props: {
    * The 'name' attribute that will be applied to the end textarea.
    */
   name: String,
+  
+  /**
+   * The 'rows' attribute that will be applied to the end textarea. Controlls initial height of the element.
+   */
+  rows: String,
 }
 ```
                         

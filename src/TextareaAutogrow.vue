@@ -1,6 +1,7 @@
 <template>
   <textarea
       :value="value"
+      :rows="rows"
       @input="$emit('input', $event.target.value)"
 
       @keydown="setAutoHeight"
@@ -33,6 +34,11 @@
        * The 'name' attribute that will be applied to the end textarea.
        */
       name: String,
+      
+      /**
+       * The 'rows' attribute that will be applied to the end textarea.
+       */
+      rows: String,
     },
 
     data() {
